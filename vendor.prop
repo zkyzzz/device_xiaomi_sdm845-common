@@ -88,6 +88,9 @@ persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 ro.bluetooth.a2dp_offload.supported=true
 vendor.qcom.bluetooth.soc=cherokee
 
+# Camera
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.pixelexperience.faceunlock
+
 # Charger
 ro.charger.enable_suspend=true
 
