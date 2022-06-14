@@ -353,8 +353,7 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     android.system.net.netd@1.0.vendor \
     android.system.net.netd@1.1 \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
+    android.system.net.netd@1.1.vendor
 
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
