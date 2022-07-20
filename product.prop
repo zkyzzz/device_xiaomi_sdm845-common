@@ -2,4 +2,8 @@
 ro.config.low_ram=false
 ro.lmk.log_stats=true
 # IORap
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
+vendor.iop.enable_prefetch_ofr=0
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
