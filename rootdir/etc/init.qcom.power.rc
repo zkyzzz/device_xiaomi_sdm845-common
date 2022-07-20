@@ -142,6 +142,12 @@ on property:init.svc.vendor.charger=running
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
+on property:sys.boot_completed=1
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
 on enable-low-power
     # Set the default IRQ affinity to the silver cluster.
     # When a CPU is isolated/hotplugged, the IRQ affinity is adjusted

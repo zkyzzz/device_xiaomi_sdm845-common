@@ -428,8 +428,6 @@ on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio/bg 0755 system system
     chown system system /dev/blkio/bg/tasks
     chmod 0664 /dev/blkio/bg/tasks
-    write /dev/blkio/blkio.weight 1000
-    write /dev/blkio/bg/blkio.weight 100
 
 on property:persist.vendor.sys.mba_boot_timeout=*
     write /sys/module/pil_msa/parameters/pbl_mba_boot_timeout_ms ${persist.vendor.sys.mba_boot_timeout}
